@@ -7,11 +7,20 @@ modules:
       viewportSize: medium
       title: Custom UI from Pepesan
       icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
+    - key: hello-world-custom-ui-hello-world-panel-typescript
+      resource: main-ts
+      resolver:
+        function: resolver
+      viewportSize: medium
+      title: Custom UI from Pepesan Typescript
+      icon: https://developer.atlassian.com/platform/forge/images/issue-panel-icon.svg
   function:
     - key: resolver
       handler: index.handler
 resources:
   - key: main
     path: static/hello-world/build
+  - key: main-ts
+    path: static/mypage/build
 app:
   id: ari:cloud:ecosystem::app/59fb8089-716d-4559-8fd3-61e38f916ea4
